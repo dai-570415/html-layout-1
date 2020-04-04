@@ -1,0 +1,245 @@
+/* font-family: 'Noto Serif JP', serif; */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    width: 100%;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 100;
+}
+h1 {
+    font-size: 30px;
+    line-height: 1.75em;
+    letter-spacing: 5px;
+    -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+    position: fixed;
+}
+.pc {
+    display: block;
+}
+
+/* js */
+.fadein {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+#page-top a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 0 0 0;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background: #fff;
+    transition: .5s;
+    right: 50px;
+    bottom: 50px;
+    position: fixed;
+}
+#page-top a:hover {
+    opacity: .5;
+}
+.main .scroll-down {
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0;
+    color: #79726e;
+    bottom: 50px;
+    right: 0;
+    position: absolute;
+    transform:rotate(90deg);
+}
+.main .scroll-down::after {
+    content: '';
+    display: inline-block;
+    background: #79726e;
+    height: 1px;
+    width: 50px;
+    margin:0 0 2px 0;
+}
+/* js */
+
+.container {
+    width: 95%;
+    margin: 15px auto;
+}
+.header .blog-title {
+    font-size: 15px;
+    font-family: 'Noto Serif JP', serif;
+    margin: 0 10px 0 0;
+}
+.header .blog-description {
+    font-size: 12px;
+    margin: 0 0 0 10px;
+}
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 100px 0 0 0;
+}
+.main .right-main {
+    width: 30%;
+}
+.main .left-main {
+    width: 45%;
+    margin: 0 100px 0;
+}
+.main .left-main nav {
+    font-family: 'Noto Serif JP', serif;
+    margin: 100px 0 150px;
+}
+.main .left-main nav .index {
+    font-size: 18px;
+    margin: 0 0 25px 0;
+}
+.main .left-main nav ul li {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    padding: 0 0 0 20px;
+}
+.main .left-main nav ul li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    margin: 0 10px 0 0;
+    border-bottom: 1px solid #000;
+    bottom: 5px;
+    position: relative;
+}
+.main .left-main .article .section {
+    margin: 0 0 100px 0;
+}
+.main .left-main .article .section h2 {
+    font-size: 16px;
+    letter-spacing: 0.25em;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+}
+.main .left-main .article .section h3 {
+    font-size: 13px;
+    margin: 30px 0 10px 0;
+}
+.main .left-main .article .section h3::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    margin: 0 10px 0 0;
+    border-bottom: 1px solid #000;
+    bottom: 5px;
+    position: relative;
+}
+.main .left-main .article .section p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 25px;
+}
+.main .left-main .article .section p.new-line {
+    margin: 20px 0 0 0;
+}
+.main .left-main .user-wrapper {
+    display: flex;
+}
+.main .left-main img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.main .left-main .user-detail {
+    margin: 0 0 0 30px;
+}
+.main .left-main .user-detail h3 {
+    margin: 0 0 5px 0;
+}
+.main .left-main .user-detail .sns-icon a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 15px 0;
+}
+.main .left-main .user-detail p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 1.7em;
+}
+.footer {
+    font-size: 10px;
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+.footer span {
+    font-size: 13px;
+    top: 1px;
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 85%;
+    }
+    h1 {
+        font-size: 40px;
+        text-align: right;
+        writing-mode: horizontal-tb;
+        position: static;
+    }
+    .header {
+        text-align: center;
+    }
+    .main {
+        display: block;
+        margin: 150px 0 0 0;
+    }
+    .main .right-main {
+        width: 100%;
+    }
+    .main .left-main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main .left-main nav {
+        font-family: 'Noto Serif JP', serif;
+        margin: 150px 0;
+    }
+    .main .left-main nav ul li {
+        padding: 0;
+    }
+    .main .left-main .user-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .main .left-main .article .section h3 {
+        font-size: 15px;
+    }
+    .main .left-main .article .section p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .main .left-main .user-detail {
+        margin: 0;
+    }
+    .main .left-main .user-detail p {
+        font-size: 14px;
+    }
+}
